@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Flying Eagle"
+description = "A dark military-inspired video platform for browsing, searching, watching, and saving tactical and aviation content without ads or monetization."
+version = "1.0.0"
+id = "artifacts/flying-eagle"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22678
+
+[services.development]
+run = "pnpm --filter @workspace/flying-eagle run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/flying-eagle", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/flying-eagle/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22678"
+BASE_PATH = "/"
