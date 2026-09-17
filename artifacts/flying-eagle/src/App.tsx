@@ -26,6 +26,10 @@ import {
   Zap,
 } from 'lucide-react';
 import { useLocation } from 'wouter';
+import airsoftFieldHero from '@assets/generated_images/airsoft-field-hero.jpg';
+import airsoftGameDay from '@assets/generated_images/airsoft-game-day.jpg';
+import airsoftLoadout from '@assets/generated_images/airsoft-loadout.jpg';
+import airsoftNightGame from '@assets/generated_images/airsoft-night-game.jpg';
 
 const queryClient = new QueryClient();
 
@@ -52,7 +56,7 @@ const videos: Video[] = [
     duration: '18:42',
     views: '1.2M',
     age: '3 days ago',
-    image: 'https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: airsoftFieldHero,
     description: 'A full day at Black Pine Airsoft: tight lanes, fast pushes, and the split-second calls that win a round.',
     live: true,
   },
@@ -64,7 +68,7 @@ const videos: Video[] = [
     duration: '31:07',
     views: '842K',
     age: '1 week ago',
-    image: 'https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    image: airsoftGameDay,
     description: 'A quiet flank, a patient squad, and the game-day discipline behind a clean objective capture.',
   },
   {
@@ -75,7 +79,7 @@ const videos: Video[] = [
     duration: '24:19',
     views: '2.7M',
     age: '2 weeks ago',
-    image: 'https://images.pexels.com/photos/358220/pexels-photo-358220.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    image: airsoftLoadout,
     description: 'A practical pre-game loadout check covering mags, comms, eye pro, and the kit that actually earns its space.',
   },
   {
@@ -86,7 +90,7 @@ const videos: Video[] = [
     duration: '12:53',
     views: '496K',
     age: '4 days ago',
-    image: 'https://images.pexels.com/photos/163444/war-desert-soldiers-army-163444.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    image: airsoftFieldHero,
     description: 'How to move through a field without giving away your angle, your pace, or your next play.',
   },
   {
@@ -97,7 +101,7 @@ const videos: Video[] = [
     duration: '16:08',
     views: '318K',
     age: '6 days ago',
-    image: 'https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    image: airsoftLoadout,
     description: 'A clean, practical guide to hop-up adjustment, consistency, and getting more from every BB.',
   },
   {
@@ -108,7 +112,7 @@ const videos: Video[] = [
     duration: '09:32',
     views: '207K',
     age: '8 days ago',
-    image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    image: airsoftNightGame,
     description: 'Low light, wet ground, and a night objective that turns every flashlight decision into a team call.',
   },
   {
@@ -119,7 +123,7 @@ const videos: Video[] = [
     duration: '42:11',
     views: '155K',
     age: '2 months ago',
-    image: 'https://images.pexels.com/photos/625219/pexels-photo-625219.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    image: airsoftGameDay,
     description: 'A field walk-through on sightlines, dead ground, choke points, and the routes players miss on the first lap.',
   },
   {
@@ -130,7 +134,7 @@ const videos: Video[] = [
     duration: '21:40',
     views: '293K',
     age: '3 weeks ago',
-    image: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    image: airsoftNightGame,
     description: 'Terrain is information. A practical lesson in cover, movement, and keeping your squad in the game.',
   },
 ];
